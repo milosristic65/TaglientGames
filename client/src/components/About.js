@@ -26,6 +26,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/milos-ristic-a61132242/"
             target="_blank"
+            rel="noreferrer"
           >
             <div id="milos" className="team-member">
               <div className="gradient-overlay"></div>
@@ -42,6 +43,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/luka-pavi%C4%87evi%C4%87-2bb44b310/"
             target="_blank"
+            rel="noreferrer"
           >
             <div id="luka" className="team-member">
               <div className="gradient-overlay"></div>
@@ -59,6 +61,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/stefan-jov%C4%8Di%C4%87-287809313/"
             target="_blank"
+            rel="noreferrer"
           >
             <div id="stefan" className="team-member">
               <div className="gradient-overlay"></div>
