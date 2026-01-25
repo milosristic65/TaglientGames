@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <br />
         <div className="founders">
-          <h1>Founders</h1>
+          <h1>Our Team</h1>
           <p>
             We established <b className="highlight_blue">Taglient</b>{" "}
             <b className="highlight">Games</b> in pursuit of our dream to create
@@ -28,8 +28,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="milos" className="team-member">
-                <div className="gradient-overlay"></div>
+              <div className="team-member">
                 <img src={milos_ristic} alt="Milos_Ristic" />
                 <div className="team-info">
                   <h1>Milos Ristic</h1>
@@ -45,8 +44,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="luka" className="team-member">
-                <div className="gradient-overlay"></div>
+              <div className="team-member">
                 <img src={luka_pavicevic} alt="Luka_Pavicevic" />
                 <div className="team-info">
                   <h1>Luka Pavicevic</h1>
@@ -63,8 +61,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="stefan" className="team-member">
-                <div className="gradient-overlay"></div>
+              <div className="team-member">
                 <img src={stefan_jovcic} alt="Stefan_Jovcic" />
                 <div className="team-info">
                   <h1>Stefan Jovcic</h1>
