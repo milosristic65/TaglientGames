@@ -132,8 +132,8 @@
   .message-input {
     min-height: 150px;
   }
-  .team-member {
-    margin: 15px;
+  .team{
+    gap: 40px;
   }
   .message-input {
     resize: none;
