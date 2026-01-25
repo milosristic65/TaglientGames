@@ -4,7 +4,6 @@ body {
   background-color: #171717;
   color: #f6f6f6;
   font-family: "Lato", serif;
-  /* Removed zoom to prevent viewport unit issues */
 }
 
 html {
@@ -17,7 +16,6 @@ html {
 }
 
 .navContent {
-  max-width: 1900px;
   width: 100%;
   height: 100%;
   padding-left: 40px;

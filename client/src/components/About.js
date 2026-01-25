@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/about.css";
-import milos_ristic from "../images/Team/Milos_Ristic.jpg";
-import luka_pavicevic from "../images/Team/Luka_Pavicevic.jpg";
-import stefan_jovcic from "../images/Team/Stefan_Jovcic.jpg";
+import milos_pfp from "../images/Team/milos.webp";
+import luka_pfp from "../images/Team/luka.webp";
+import stefan_pfp from "../images/Team/stefan.webp";
 
 export default function Footer() {
   return (
@@ -29,7 +29,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <div className="team-member">
-                <img src={milos_ristic} alt="Milos_Ristic" />
+                <img src={milos_pfp} alt="Milos_Ristic" />
                 <div className="team-info">
                   <h1>Milos Ristic</h1>
                   <p>Programmer | Lead Artist</p>
@@ -45,7 +45,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <div className="team-member">
-                <img src={luka_pavicevic} alt="Luka_Pavicevic" />
+                <img src={luka_pfp} alt="Luka_Pavicevic" />
                 <div className="team-info">
                   <h1>Luka Pavicevic</h1>
                   <p>Lead Programmer | Concept Artist</p>
@@ -62,7 +62,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <div className="team-member">
-                <img src={stefan_jovcic} alt="Stefan_Jovcic" />
+                <img src={stefan_pfp} alt="Stefan_Jovcic" />
                 <div className="team-info">
                   <h1>Stefan Jovcic</h1>
                   <p>Community Manager</p>

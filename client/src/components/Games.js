@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/games.css";
 import "../css/heading.css";
-import svarog from "../images/Svarog/Svarog-cover.jpg";
-import paperSharp from "../images/PaperSharp/PaperSharp-Cover.jpg";
+import svarog from "../images/Svarog/Svarog-cover.webp";
+import paperSharp from "../images/PaperSharp/PaperSharp-Cover.webp";
 import itch from "../images/Logo/itch.png";
 
 export default function Content() {
