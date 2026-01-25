@@ -1,14 +1,5 @@
-@media (min-width: 1208px) {
-  .about {
-    background-attachment: fixed;
-  }
-}
-
 @media (max-width: 1207px) {
-  /*********/
   /* About */
-  /*********/
-
   .about img {
     width: 300px;
   }
@@ -40,9 +31,7 @@
 }
 
 @media (max-width: 946px) {
-  /******************/
   /* Navigation Bar */
-  /******************/
   .logo {
     margin-left: 10px;
   }
@@ -55,9 +44,7 @@
     visibility: visible;
   }
 
-  /*****************/
   /* Index Content */
-  /*****************/
   .index-content .buttons {
     display: flex;
     flex-direction: column;
@@ -68,16 +55,12 @@
     font-size: 20px;
   }
 
-  /*********/
   /* Games */
-  /*********/
   .game-container {
     flex-direction: column;
   }
 
-  /*********/
   /* About */
-  /*********/
   .team {
     flex-direction: column;
     justify-content: center;
@@ -136,9 +119,7 @@
     visibility: visible;
   }
 
-  /****************/
   /* Contact Form */
-  /****************/
   .contact-content {
     margin: auto;
     width: 85%;
