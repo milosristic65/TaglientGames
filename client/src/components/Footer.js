@@ -23,7 +23,7 @@ export default function Footer() {
     <nav className="footer">
       <div className="footer-content">
         <div className="footer-links">
-          <a href="#" onClick={handleLinkClick}>
+          <a href="#root" onClick={handleLinkClick}>
             Home
           </a>
           <a href="#games" onClick={handleLinkClick}>

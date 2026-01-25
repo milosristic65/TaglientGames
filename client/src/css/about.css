@@ -4,31 +4,10 @@
 
 .us {
   background: #171717;
-  margin-left: -40px;
-  margin-right: -40px;
-  margin-top: -40px;
-  padding: 40px;
 }
 
-/* Fixed background image */
 .about {
-  background-image: url("../images/Team/Founders.jpg");
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 1; 
-}
-
-.about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(23, 23, 23, 0.65);
-  z-index: 1;
+  padding-bottom: 50px;
 }
 
 .about > * {
@@ -44,7 +23,9 @@
 
 .team {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
   margin-top: 50px;
   filter: drop-shadow(0px 5px 30px rgb(0, 0, 0));
 }
@@ -62,7 +43,9 @@
   pointer-events: none;
   display: block;
   border-radius: 5px;
-  transition: filter 0.5s ease, transform 0.5s ease;
+  transition:
+    filter 0.5s ease,
+    transform 0.5s ease;
 }
 
 .team-member:hover img {
@@ -99,7 +82,9 @@
   color: rgb(255, 255, 255);
   filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
   padding: 10px;
-  transition: bottom 0.5s ease, transform 0.5s ease;
+  transition:
+    bottom 0.5s ease,
+    transform 0.5s ease;
   height: 100px;
   z-index: 2;
 }
@@ -108,14 +93,18 @@
   margin: 0;
   font-size: 30px;
   filter: drop-shadow(0px 5px 30px rgb(0, 0, 0));
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .team-info p {
   margin: 5px 0 0;
   font-size: 20px;
   filter: drop-shadow(0px 5px 30px rgb(0, 0, 0));
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .team-info .additional-text {
@@ -124,7 +113,10 @@
   margin-top: 10px;
   font-weight: 500;
   transform: translateY(10px);
-  transition: visibility 0.5s, opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    visibility 0.5s,
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 #milos .gradient-overlay:hover {

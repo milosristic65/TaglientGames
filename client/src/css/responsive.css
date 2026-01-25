@@ -56,7 +56,7 @@
   }
 
   /* Games */
-  .game-container {
+  .game-flex {
     flex-direction: column;
   }
 

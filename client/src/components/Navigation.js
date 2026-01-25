@@ -40,32 +40,34 @@ export default function Navigation() {
 
   return (
     <nav className="navigation">
-      <a href="#" onClick={handleLinkClick}>
-        <img src={logo} alt="Taglient_Games_Logo" className="logo" />
-      </a>
-      <HamburgerMenu />
-      <ul className="nav-links">
-        <li>
-          <a href="#" onClick={handleLinkClick}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#games" onClick={handleLinkClick}>
-            Games
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={handleLinkClick}>
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={handleLinkClick}>
-            Contact
-          </a>
-        </li>
-      </ul>
+      <div className="navContent">
+        <a href="#root" onClick={handleLinkClick}>
+          <img src={logo} alt="Taglient_Games_Logo" className="logo" />
+        </a>
+        <HamburgerMenu />
+        <ul className="nav-links">
+          <li>
+            <a href="#root" onClick={handleLinkClick}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#games" onClick={handleLinkClick}>
+              Games
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={handleLinkClick}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={handleLinkClick}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

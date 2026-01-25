@@ -34,7 +34,7 @@ const HamburgerMenu = () => {
       <div className={`hamburger-menu ${isOpen ? "active" : ""}`}>
         <ul>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#root" onClick={handleLinkClick}>
               Home
             </a>
           </li>

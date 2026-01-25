@@ -1,17 +1,15 @@
-.content {
-  text-align: left;
+.heading {
   font-weight: 800;
-  padding: 40px;
+  padding: 40px 0;
   background-color: #171717;
-  box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.4);
 }
 
-.content h1 {
+.heading h1 {
   font-weight: 800;
   text-align: left;
 }
 
-.content p {
+.heading p {
   font-weight: 600;
 }
 
