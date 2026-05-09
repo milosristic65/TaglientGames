@@ -2,8 +2,6 @@
 
 Welcome to **Taglient Games**, our indie game development brand. This repository contains the source code for our official website, showcasing our games, information about our team, and a contact form.  
 
-Link: [https://www.taglientgames.com](https://www.taglientgames.com/)
-
 ## Overview  
 The website provides:  
 - **Our Games**: Discover the games we've created.  
