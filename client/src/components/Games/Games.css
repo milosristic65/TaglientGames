@@ -44,7 +44,7 @@ a {
 } */
 
 #svarog-container {
-  background-image: url("../images/Svarog/RiverSpiritEntrance.webp");
+  background-image: url("../../images/Svarog/RiverSpiritEntrance.webp");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +53,7 @@ a {
 }
 
 #papersharp-container {
-  background-image: url("../images/PaperSharp/Workshop.webp");
+  background-image: url("../../images/PaperSharp/Workshop.webp");
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
