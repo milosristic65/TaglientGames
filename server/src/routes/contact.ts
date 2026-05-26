@@ -67,7 +67,7 @@ const contactLimiter = rateLimit({
   message: "Too many requests, please try again later.",
 });
 
-router.post("/", contactLimiter, async (req, res) => {
+router.post("/", contactLimiter as any, async (req, res) => {
   const { user_name, user_email, user_message, recaptcha_token } = req.body;
   try {
     // reCAPTCHA human verification
