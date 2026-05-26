@@ -6,6 +6,8 @@ import contactRouter from "./routes/contact";
 
 const app = express();
 
+console.log(process.env.CORS_ORIGIN);
+
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
