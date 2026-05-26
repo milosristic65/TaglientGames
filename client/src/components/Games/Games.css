@@ -1,0 +1,126 @@
+body {
+  overflow-x: hidden;
+}
+
+.game-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.game-flex {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.game-container h2 {
+  font-size: 30px;
+}
+
+.game-container p {
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* .game-container:hover::before {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.game-container:hover {
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.5));
+  z-index: 10;
+} */
+
+#svarog-container {
+  background-image: url("../images/Svarog/RiverSpiritEntrance.webp");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#papersharp-container {
+  background-image: url("../images/PaperSharp/Workshop.webp");
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.game-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.game-image {
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.game-info {
+  flex: 1;
+  z-index: 2;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.game-title {
+  margin-top: 18px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.game-desc {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon:hover {
+  color: #fa6161;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(59%) saturate(5076%)
+    hue-rotate(327deg) brightness(105%) contrast(95%);
+}
+
+.icon img {
+  width: 60px;
+  filter: invert(1);
+}
+
+.icon p {
+  margin: 0;
+}
