@@ -7,18 +7,6 @@ import gameplayVideo from "../../videos/RiverSpirit Entrance.mp4";
 export default function Gameplay(): React.JSX.Element {
   const [scrollY, setScrollY] = useState<number>(0);
 
-  const handleLinkClick = (
-    event: React.MouseEvent<HTMLAnchorElement>,
-  ): void => {
-    event.preventDefault();
-    const targetId =
-      event.currentTarget.getAttribute("href")?.substring(1) ?? "";
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const handleScroll = (): void => {
     setScrollY(window.scrollY);
   };
@@ -50,10 +38,10 @@ export default function Gameplay(): React.JSX.Element {
           <b className="highlight">ART</b> first!
         </p>
         <div className="buttons">
-          <a href="#games" onClick={handleLinkClick}>
+          <a href="#games">
             <button className="index-button games-button">Games</button>
           </a>
-          <a href="#about" onClick={handleLinkClick}>
+          <a href="#about">
             <button className="index-button people-button">People</button>
           </a>
         </div>
