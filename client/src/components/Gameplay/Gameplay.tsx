@@ -1,31 +1,37 @@
-import React, { useEffect, useState } from "react";
-import type { CSSProperties } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Gameplay.css";
 import logo from "../../images/Logo/TaglientGamesLogo.png";
 import gameplayVideo from "../../videos/RiverSpirit Entrance.mp4";
 
 export default function Gameplay(): React.JSX.Element {
-  const [scrollY, setScrollY] = useState<number>(0);
-
-  const handleScroll = (): void => {
-    setScrollY(window.scrollY);
-  };
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  const parallaxSpeed = 0.3;
 
   useEffect(() => {
+    let rafId: number;
+
+    const handleScroll = (): void => {
+      rafId = requestAnimationFrame(() => {
+        if (parallaxRef.current) {
+          parallaxRef.current.style.transform = `translateY(${window.scrollY * parallaxSpeed}px)`;
+        }
+      });
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(rafId);
     };
   }, []);
 
-  const parallaxStyle: CSSProperties = {
-    transform: `translateY(${scrollY * 0.4}px)`,
-    transition: "transform 0.01s ease-out",
-  };
-
   return (
     <div>
-      <div className="video-container" style={parallaxStyle}>
+      <div
+        ref={parallaxRef}
+        className="video-container"
+        style={{ willChange: "transform" }} // Improves performance
+      >
         <video autoPlay loop muted playsInline className="background-video">
           <source src={gameplayVideo} type="video/mp4" />
           Your browser does not support the video tag.
